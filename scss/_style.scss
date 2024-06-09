@@ -1,12 +1,19 @@
+body {
+    background-color: $yinulisferi;
+    padding-top: 96px; // Make space for the fixed header
+}
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
+    top: 0;
     width: 100%;
     height: 96px;
     background-color: $dark-blue;
     padding: 0 20px;
+    z-index: 1000; // Ensure header is above other elements
 
     .logo {
         width: 70px;
@@ -14,7 +21,8 @@ header {
         flex-shrink: 0;
         vertical-align: middle;
     }
-    .HEADERTITLE{
+
+    .HEADERTITLE {
         color: $blue-light;
         font-family: "Copperplate Gothic Light";
         font-size: 27px;
@@ -22,7 +30,6 @@ header {
         font-weight: 400;
         line-height: normal;
     }
-
 
     nav {
         flex-grow: 1;
@@ -47,7 +54,7 @@ header {
         }
     }
 
-    .sidebar{
+    .sidebar {
         position: fixed;
         top: 0;
         right: 0;
@@ -62,23 +69,24 @@ header {
         align-items: flex-start;
         justify-content: flex-start;
 
-        li{
+        li {
             width: 100%;
         }
-        a{
+
+        a {
             width: 100%;
             padding-left: 30px;
         }
-        div{
+
+        div {
             padding-left: 20px;
-            a:hover{
+
+            a:hover {
                 background-color: $dark-blue;
                 transition: 0.5s;
             }
         }
     }
-
-
 
     .icons {
         display: flex;
@@ -95,25 +103,191 @@ header {
             align-items: center;
             padding-left: 10px;
         }
-        a:hover{
+
+        a:hover {
             background-color: $dark-blue;
             transition: 0.5s;
         }
     }
+}
 
-    @media (max-width: 800px) {
-        #hideOnMobile{
-            display: none;
+
+
+// SECTION 1 STYLING 
+
+section {
+    width: 1240px;
+    height: 356px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 20px auto; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
+    img {
+        width: 1240px;
+        height: 356px;
+        border-radius: 10px;
+        position: absolute;
+    }
+
+    div{
+        @include introduction-s1;
+        h1{
+            @include slogan;
+        }
+        button{
+            border-radius: 8px;
+            width: 156px;
+            height: 46px;
+            display: inline-flex;
+            height: 46px;
+            padding: 10px 19px;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            flex-shrink: 0;
+            a{
+                @include buybutton;
+            }
         }
     }
-    @media (max-width:400px) {
-        .sidebar{
-            width: 100%;
+}
+
+
+// JANREBIS SEQCIA 
+
+.Janrebi {
+    width: 1262px;
+    height: 300px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    margin-top: 60px;
+    position: relative;
+    padding: 10px;
+
+    h1 {
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+        font-size: 24px;
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        box-sizing: border-box;
+        color: #472D1C;
+        font-family: "Bell MT";
+        font-size: 58px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .Janrebi-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: calc(100% - 50px);
+        padding-top: 50px;
+
+        .cards {
+            width: 208px;
+            height: 180px;
+            border-radius: 10px;
+            background: #00fff2;
+            box-sizing: border-box;
+            margin-left: -65px;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img{
+                width: 200px;
+                height: 200px;
+                flex-shrink: 0;
+            }
+            .defsec{
+                width: 100px;
+                height: 80px;
+                flex-shrink: 0;
+                align-self: self-start;
+                padding-left: 20px;
+                top: 10px;
+                left: 40px;
+            }
+            p{
+                color: #000000;
+                font-family: "Bell MT";
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                position: relative;
+                text-align: center;
+                top: 30px;
+            }
         }
     }
-    @media (min-width:800px){
-        #hideOnBig{
-            display: none;
-        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//MEDIA CSS
+
+@media (max-width: 800px) {
+    #hideOnMobile {
+        display: none;
+    }
+}
+
+@media (max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+@media (min-width: 800px) {
+    #hideOnBig {
+        display: none;
+    }
+}
+@media (max-width: 800px) {
+    .mobile-s-1{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 500px) {
+    .Janrebi-list{
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
