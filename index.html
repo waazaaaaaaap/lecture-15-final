@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.10-0/css/ionicons.min.css"
     />
+    <link rel="website icon" type="png" href="./icons/webicon.png" />
 
     <link rel="stylesheet" href="css/global.css" />
     <title>CyberSec Georgia</title>
@@ -26,7 +27,7 @@
       <nav>
         <ul>
           <li id="hideOnMobile">
-            <a href="#მთავარი">მთავარი</a>
+            <a href="#მთავარი" class="active">მთავარი</a>
           </li>
           <li id="hideOnMobile">
             <a href="pages/news.html">სიახლეები</a>
@@ -35,7 +36,10 @@
             <a href="pages/contact.html">კონტაქტი</a>
           </li>
           <li id="hideOnMobile">
-            <a href="#კარიერები">კარიერები</a>
+            <a href="pages/services.html">სერვისები</a>
+          </li>
+          <li id="hideOnMobile">
+            <a href="about-us.html">ჩვენს შესახებ</a>
           </li>
           <li onclick="showSidebar()">
             <a href="#" class="menu" id="hideOnBig">
@@ -80,7 +84,10 @@
             <a href="pages/contact.html">კონტაქტი</a>
           </li>
           <li>
-            <a href="#კარიერები">კარიერები</a>
+            <a href="pages/services.html">სერვისები</a>
+          </li>
+          <li>
+            <a href="pages/about-us.html">ჩვენს შესახებ</a>
           </li>
           <div class="icons">
             <a href="https://hackerone.com/opportunities/all" target="_blank">
@@ -145,9 +152,8 @@
 
     <!----BANERI---->
     <section class="banner-container">
-      <img src="images/section1.jpg" alt="s1-backgrounds" class="mobile-s-1" />
-      <div class="mobile-s-1">
-        <h1 class="mobile-s-1">დაიცავი შენი ციფრული სამყარო</h1>
+      <div class="banner-content">
+        <h1>დაიცავი შენი<br />ციფრული სამყარო.</h1>
         <button>
           <a href="#wignebi" class="button-click">წიგნების ნახვა</a>
         </button>
@@ -211,25 +217,25 @@
     <!------CARDS SLIDER MAIN PART------->
     <section class="slider">
       <div
-        id="carouselExampleControls"
+        id="carouselExampleControls1"
         class="carousel slide"
         data-ride="carousel"
       >
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <!----START---->
             <div class="card" style="width: 18rem">
               <div class="Image-area">
                 <a
                   href="https://www.udemy.com/course/ethical-hacking-and-comptia-pentest-exam-prep-pt0-001/?audience=Keyword&campaigntype=Search&gad_source=1&gclid=Cj0KCQjw97SzBhDaARIsAFHXUWB59LVvd2sfxf668mFfJ-FHcyZWuYMIJrnucizOtDgYWxZaXFqOtWUaArh_EALw_wcB&language=EN&matchtype=b&portfolio=ROW-English&priority=&product=Course&test=&topic=&utm_campaign=PenetrationTesting_v.PROF_la.EN_cc.ROW_ti.7110&utm_content=deal4584&utm_medium=udemyads&utm_source=adwords&utm_term=_._ag_82721539176_._ad_638420289728_._kw_penetration+testing+certification_._de_c_._dm__._pl__._ti_kwd-786568910098_._li_1007469_._pd__._&couponCode=2021PM25"
                   target="_blank"
-                  ><img
+                >
+                  <img
                     class="card-img-top"
                     src="icons/pentest.png"
                     alt="Card image cap"
-                /></a>
+                  />
+                </a>
               </div>
-
               <div class="card-body">
                 <h5 class="card-title" style="font-size: 24px">Pentesting</h5>
                 <p class="card-text">
@@ -358,7 +364,7 @@
         </div>
         <a
           class="carousel-control-prev"
-          href="#carouselExampleControls"
+          href="#carouselExampleControls1"
           role="button"
           data-slide="prev"
         >
@@ -367,7 +373,7 @@
         </a>
         <a
           class="carousel-control-next"
-          href="#carouselExampleControls"
+          href="#carouselExampleControls1"
           role="button"
           data-slide="next"
         >

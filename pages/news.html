@@ -10,7 +10,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/global.css" />
-    <title>News - CyberSec Georgia</title>
+    <link rel="website icon" type="png" href="../icons/webicon.png" />
+    <title>CyberSec Georgia • News</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap");
     </style>
@@ -23,10 +24,21 @@
       </a>
       <nav>
         <ul>
-          <li id="hideOnMobile"><a href="../index.html">მთავარი</a></li>
-          <li id="hideOnMobile"><a href="#">სიახლეები</a></li>
-          <li id="hideOnMobile"><a href="contact.html">კონტაქტი</a></li>
-          <li id="hideOnMobile"><a href="#კარიერები">კარიერები</a></li>
+          <li id="hideOnMobile">
+            <a href="../index.html">მთავარი</a>
+          </li>
+          <li id="hideOnMobile">
+            <a href="#" class="active">სიახლეები</a>
+          </li>
+          <li id="hideOnMobile">
+            <a href="contact.html">კონტაქტი</a>
+          </li>
+          <li id="hideOnMobile">
+            <a href="#სერვისები">სერვისები</a>
+          </li>
+          <li id="hideOnMobile">
+            <a href="about-us.html">ჩვენს შესახებ</a>
+          </li>
           <li onclick="showSidebar()" a>
             <a href="#" class="menu" id="hideOnBig">
               <svg
@@ -60,8 +72,11 @@
           </li>
           <li><a href="../index.html">მთავარი</a></li>
           <li><a href="#">სიახლეები</a></li>
-          <li><a href="/pages/contact.html">კონტაქტი</a></li>
-          <li><a href="#კარიერები">კარიერები</a></li>
+          <li><a href="contact.html">კონტაქტი</a></li>
+          <li><a href="services.html">სერვისები</a></li>
+          <li>
+            <a href="about-us.html">ჩვენს შესახებ</a>
+          </li>
           <div class="icons">
             <a href="https://hackerone.com/opportunities/all" target="_blank">
               <svg
@@ -123,7 +138,7 @@
     </header>
 
     <!-- Banner Section -->
-    <section class="banner-container">
+    <section class="banner-container-news">
       <img
         src="https://www.fo-consultancy.com/wp-content/uploads/2021/03/Branch-Opening-in-Turkey.jpg"
         alt="Branch Opening"
