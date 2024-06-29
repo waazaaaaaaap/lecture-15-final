@@ -1,6 +1,6 @@
 body {
   background-color: $yinulisferi;
-  padding-top: 96px; // Make space for the fixed header
+  padding-top: 96px;
 }
 
 header {
@@ -13,7 +13,7 @@ header {
   height: 96px;
   background-color: $dark-blue;
   padding: 0 20px;
-  z-index: 1000; // Ensure header is above other elements
+  z-index: 1000;
 
   .logo {
     width: 70px;
@@ -145,14 +145,9 @@ section.banner-container {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(
-      0,
-      0,
-      0,
-      0.5
-    ); /* Adjust the opacity value to make it darker or lighter */
+    background: rgba(0, 0, 0, 0.5);
     z-index: 0;
-    border-radius: 10px; /* Ensures the overlay matches the border radius of the container */
+    border-radius: 10px;
   }
 
   .banner-content {
@@ -249,7 +244,7 @@ section.banner-container {
 
 @media (max-width: 768px) {
   section.banner-container {
-    height: 500px; /* Adjusted height for tablets */
+    height: 500px;
     padding-left: 20px;
     padding-bottom: 20px;
 
@@ -269,7 +264,7 @@ section.banner-container {
 
 @media (max-width: 480px) {
   section.banner-container {
-    height: 300px; /* Adjusted height for mobile */
+    height: 300px;
     padding: 10px;
 
     .banner-content {
@@ -286,7 +281,7 @@ section.banner-container {
   }
 }
 
-/* General spacing between sections */
+/* Seqciebs shoris dashoreba */
 section + section {
   margin-top: 40px;
 
@@ -1231,26 +1226,26 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 360px; /* Adjust height as needed */
-  background-color: #f8f9fa1e; /* Background color for the banner */
+  height: 360px;
+  background-color: #f8f9fa1e;
 
   .banner-image {
     width: 1300px;
     height: 360px;
-    object-fit: cover; /* Ensure the image covers the entire container */
-    border-radius: 8px; /* Optional: Rounded corners for the image */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Box shadow for depth */
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   .banner-content {
     position: absolute;
     text-align: center;
-    color: #ffffff; /* Text color */
+    color: #ffffff;
     padding: 20px;
     max-width: 60%;
-    height: 300px; /* Limit width of content for readability */
-    background-color: rgba(0, 0, 0, 0.614); /* Semi-transparent background */
-    border-radius: 8px; /* Optional: Rounded corners for content box */
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.614);
+    border-radius: 8px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -1279,7 +1274,7 @@ footer {
 
     .animated-title {
       font-size: 28px;
-      padding-bottom: 15px; /* Adjust font size for smaller screens */
+      padding-bottom: 15px;
     }
     .banner-image {
       max-width: 80%;
@@ -1334,13 +1329,13 @@ footer {
   text-align: center;
 
   .container {
-    width: 1240px; /* Match the banner width */
-    max-width: 100%; /* Ensure it doesn't overflow on smaller screens */
+    width: 1240px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 20px;
-    border-radius: 20px; /* Add border radius */
-    background-color: #80dbff; /* Add background color to make the border radius visible */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.308); /* Optional: Add some shadow for better visibility */
+    border-radius: 20px;
+    background-color: #80dbff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.308);
   }
 
   h2 {
