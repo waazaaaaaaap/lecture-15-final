@@ -1162,6 +1162,16 @@ footer {
     }
   }
 
+  .phonenumber:hover {
+    color: #00ad5f;
+  }
+  .mail:hover {
+    color: rgb(0, 204, 255);
+  }
+  .location:hover {
+    color: #2980b9;
+  }
+
   .item {
     &.text {
       margin-bottom: 36px;
@@ -1490,6 +1500,370 @@ footer {
   }
 }
 
+// PENTESTS SERVICE PAGE
+
+section.banner-container-pentests {
+  width: 100%;
+  height: 356px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url("https://miro.medium.com/v2/da:true/resize:fit:1200/0*u-l8HEhOjIdn2CTc");
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+  padding: 0; /* Remove padding */
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+    border-radius: 0; /* Remove border-radius */
+  }
+
+  .banner-content-pentests {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    width: 100%; /* Ensure full width */
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #d1beaf;
+      font-family: "Bell MT";
+      font-size: 46px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.92px;
+      text-transform: capitalize;
+
+      @media (max-width: 1280px) {
+        font-size: 1.8em;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 1.7em;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 1.5em;
+      }
+    }
+
+    p {
+      font-size: 1.2em;
+      color: rgb(255, 255, 255);
+      margin-bottom: 20px;
+      font-family: "Bell MT";
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.92px;
+      text-transform: capitalize;
+
+      @media (max-width: 1280px) {
+        font-size: 1em;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 1em;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 1em;
+      }
+    }
+
+    button {
+      border-radius: 8px;
+      width: 156px;
+      height: 46px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 19px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 1em;
+
+        @media (max-width: 1280px) {
+          font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+          font-size: 0.8em;
+        }
+
+        @media (max-width: 480px) {
+          font-size: 0.7em;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1240px) {
+  section.banner-container-pentests {
+    width: 100%;
+    height: auto;
+    margin-left: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+
+    .banner-content-pentests {
+      h1 {
+        font-size: 1.8em;
+      }
+
+      button {
+        width: auto;
+        padding: 8px 12px;
+        font-size: 0.9em;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  section.banner-container-pentests {
+    height: auto;
+    padding-left: 0; /* Remove padding */
+    padding-bottom: 20px;
+
+    .banner-content-pentests {
+      h1 {
+        font-size: 1.5em;
+      }
+
+      button {
+        width: auto;
+        padding: 8px 16px;
+        font-size: 0.8em;
+      }
+    }
+  }
+}
+
+// PENTESTING SECTION 1
+
+.pentesting-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  background-color: #f5f5f5;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.content {
+  flex: 3;
+  padding-right: 20px;
+  max-width: 70%;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+  }
+}
+
+.sideDarkCtaBlock {
+  background-color: #e0f7fa;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    margin: 20px;
+  }
+
+  .CtaBlock__title h5 {
+    margin: 0;
+    font-size: 1.25em;
+    color: #333;
+    text-align: center;
+  }
+
+  .CtaBlock__content {
+    margin-top: 10px;
+    text-align: center;
+
+    .small {
+      font-size: 0.875em;
+      color: #555;
+    }
+
+    .btn-primary.button.smBtn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 20px;
+      background-color: #ff5722;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #e64a19;
+      }
+    }
+  }
+}
+
+p {
+  font-size: 20px;
+}
+
+// PENTESTING SECTION 2
+
+.pentesting-section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  padding-left: 70px;
+  background-color: #e2e2e2;
+  width: 100%;
+  .content {
+    max-width: 100%;
+    padding: 0 20px;
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 700;
+    padding-top: 40px;
+  }
+
+  p {
+    font-size: 1.125em;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  li {
+    padding-bottom: 10px;
+    font-size: 1em;
+    color: #444444;
+    line-height: 1.6;
+    font-weight: 700;
+  }
+
+  @media (max-width: 768px) {
+    .pentesting-section2 {
+      padding-left: 0px;
+      padding: 20px;
+    }
+
+    .content {
+      padding: 0 10px;
+    }
+
+    h2 {
+      font-size: 1.75em;
+    }
+
+    p {
+      font-size: 1em;
+    }
+  }
+}
+
+// PENTEST SERVICE SECTION 3
+.Services-Dropdown {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+
+  .service-title {
+    font-size: 1.5em;
+    color: #333;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    transition: background-color 0.3s;
+
+    .toggle-icon {
+      font-size: 1.2em;
+      color: #ff6600;
+      transition: transform 0.3s;
+    }
+
+    &:hover {
+      background-color: #f9f9f9;
+    }
+  }
+
+  .service-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0 10px;
+
+    p {
+      font-size: 1.2em;
+      color: #092b26;
+      margin: 0;
+    }
+  }
+
+  &.active .service-content {
+    max-height: 500px;
+    padding: 10px;
+  }
+
+  &.active .toggle-icon {
+    transform: rotate(45deg);
+  }
+}
 //MEDIA CSS
 
 @media (max-width: 800px) {
